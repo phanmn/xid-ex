@@ -1,16 +1,16 @@
-defmodule RustlerPrecompilationExample.MixProject do
+defmodule Xid.MixProject do
   use Mix.Project
 
-  @version "0.5.0"
-  @source_url "https://github.com/philss/rustler_precompilation_example"
+  @version "0.1.0"
+  @source_url "https://github.com/zoonect/xid_ex"
 
   def project do
     [
-      app: :rustler_precompilation_example,
+      app: :xid,
       version: @version,
-      elixir: "~> 1.13",
+      elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
-      description: "A rustler precomplication example",
+      description: "An Elixir library for using Xid rust implementation with Rustler",
       package: package(),
       deps: deps()
     ]
@@ -46,8 +46,9 @@ defmodule RustlerPrecompilationExample.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:rustler_precompiled, "~> 0.4"},
-      {:rustler, ">= 0.0.0", optional: true}
+      {:rustler_precompiled, ">= 0.0.0"},
+      {:rustler, ">= 0.0.0", optional: true},
+      {:git_ops, ">= 0.0.0", only: [:dev]}
     ]
   end
 end

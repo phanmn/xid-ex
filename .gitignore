@@ -1,6 +1,9 @@
 # The directory Mix will write compiled artifacts to.
 /_build/
 
+# The directory Elixir language server will write compiled artifacts to.
+/.elixir_ls/
+
 # If you run "mix test --cover", coverage assets end up here.
 /cover/
 
@@ -20,7 +23,7 @@ erl_crash.dump
 *.ez
 
 # Ignore package tarball (built via "mix hex.build").
-rustler_precompilation_example-*.tar
+xid-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
