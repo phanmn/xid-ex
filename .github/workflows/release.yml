@@ -43,16 +43,6 @@ jobs:
         toolchain: stable
         target: ${{ matrix.job.target }}
 
-    - name: Download cross from GitHub releases
-      uses: giantswarm/install-binary-action@v1.0.0
-      if: ${{ matrix.job.use-cross && matrix.job.target != 'aarch64-unknown-linux-musl' }}
-      with:
-        binary: "cross"
-        version: "v0.2.1"
-        download_url: "https://github.com/rust-embedded/cross/releases/download/${version}/cross-${version}-x86_64-unknown-linux-gnu.tar.gz"
-        tarball_binary_path: "${binary}"
-        smoke_test: "${binary} --version"
-
     - name: Install cross from GitHub
       if: ${{ matrix.job.use-cross && matrix.job.target == 'aarch64-unknown-linux-musl' }}
       shell: bash
