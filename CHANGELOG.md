@@ -5,6 +5,11 @@ See [Conventional Commits](Https://conventionalcommits.org) for commit guideline
 
 <!-- changelog -->
 
+## [v0.1.3](https://github.com/zoonect/xid_ex/compare/v0.1.2...v0.1.3) (2023-02-16)
+
+
+
+
 ## [v0.1.2](https://github.com/zoonect/xid_ex/compare/v0.1.1...v0.1.2) (2023-02-16)
 
 
