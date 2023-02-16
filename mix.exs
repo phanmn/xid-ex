@@ -48,7 +48,8 @@ defmodule Xid.MixProject do
     [
       {:rustler_precompiled, ">= 0.0.0"},
       {:rustler, ">= 0.0.0", optional: true},
-      {:git_ops, ">= 0.0.0", only: [:dev]}
+      {:git_ops, ">= 0.0.0", only: [:dev]},
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
 end
