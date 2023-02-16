@@ -11,8 +11,18 @@ defmodule Xid do
     base_url:
       "https://github.com/zoonect/xid_ex/releases/download/v#{version}",
     force_build: System.get_env("XID_BUILD") in ["1", "true"],
-    targets:
-      Enum.uniq(["aarch64-unknown-linux-musl" | RustlerPrecompiled.Config.default_targets()]),
+    targets: [
+      "aarch64-apple-darwin",
+      "aarch64-unknown-linux-gnu",
+      "aarch64-unknown-linux-musl",
+      "arm-unknown-linux-gnueabihf",
+      "riscv64gc-unknown-linux-gnu",
+      "x86_64-apple-darwin",
+      "x86_64-pc-windows-gnu",
+      "x86_64-pc-windows-msvc",
+      "x86_64-unknown-linux-gnu",
+      "x86_64-unknown-linux-musl",
+    ],
     version: version
 
   # When your NIF is loaded, it will override this function.
