@@ -5,6 +5,11 @@ See [Conventional Commits](Https://conventionalcommits.org) for commit guideline
 
 <!-- changelog -->
 
+## [v0.1.7](https://github.com/phanmn/xid_ex/compare/v0.1.6...v0.1.7) (2025-09-18)
+
+
+
+
 ## [v0.1.6](https://github.com/zoonect/xid_ex/compare/v0.1.5...v0.1.6) (2025-09-18)
 
 
