@@ -2,7 +2,7 @@ defmodule Xid.MixProject do
   use Mix.Project
 
   @version "0.1.6"
-  @source_url "https://github.com/zoonect/xid_ex"
+  @source_url "https://github.com/phanmn/xid_ex"
 
   def project do
     [

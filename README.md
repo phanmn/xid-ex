@@ -16,7 +16,7 @@ After that, enter the console with `iex -S mix` and test the `add/2` function:
 Xid.generate()
 ```
 
-The GitHub Action responsible for building the NIFs can be found at [.github/workflows/release.yml](https://github.com/zoonect/xid/blob/main/.github/workflows/release.yml).
+The GitHub Action responsible for building the NIFs can be found at [.github/workflows/release.yml](https://github.com/phanmn/xid/blob/main/.github/workflows/release.yml).
 
 For further details check the [RustlerPrecompiled project](https://github.com/philss/rustler_precompiled).
 
