@@ -11,4 +11,4 @@ crate-type = ["cdylib"]
 
 [dependencies]
 rustler = "0.29.0"
-xid = { git = "https://github.com/thanhxeon2470/xid-rs", branch = "main"}
+xd = { git = "https://github.com/thanhxeon2470/xid-rs", branch = "main", package = "xid"}
