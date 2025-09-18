@@ -9,7 +9,7 @@ defmodule Xid do
     otp_app: :xid,
     crate: "xid",
     base_url:
-      "https://github.com/phanmn/xid_ex/releases/download/v#{version}",
+      "https://github.com/phanmn/xid-ex/releases/download/v#{version}",
     force_build: System.get_env("XID_BUILD") in ["1", "true"],
     targets: [
       "aarch64-apple-darwin",
