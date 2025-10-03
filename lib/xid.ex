@@ -29,4 +29,5 @@ defmodule Xid do
   # When your NIF is loaded, it will override this function.
   def generate, do: :erlang.nif_error(:nif_not_loaded)
   def generate_with_timestamp(_arg1), do: :erlang.nif_error(:nif_not_loaded)
+  def extract_timestamp(_arg1), do: :erlang.nif_error(:nif_not_loaded)
 end
