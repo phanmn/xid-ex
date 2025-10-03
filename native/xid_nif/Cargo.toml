@@ -1,14 +1,14 @@
 [package]
-name = "xid"
+name = "xid_nif"
 version = "0.1.5"
 authors = []
 edition = "2021"
 
 [lib]
-name = "xid"
+name = "xid_nif"
 path = "src/lib.rs"
 crate-type = ["cdylib"]
 
 [dependencies]
-rustler = "0.29.0"
+rustler = "0.37.0"
 xd = { git = "https://github.com/thanhxeon2470/xid-rs", branch = "main", package = "xid"}

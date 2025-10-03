@@ -8,7 +8,7 @@
 
 ```elixir
 defmodule Xid do
-  use Rustler, otp_app: :xid, crate: "xid"
+  use Rustler, otp_app: :xid, crate: "xid_nif"
 
   # When your NIF is loaded, it will override this function.
   def generate, do: :erlang.nif_error(:nif_not_loaded)

@@ -7,7 +7,7 @@ defmodule Xid do
 
   use RustlerPrecompiled,
     otp_app: :xid,
-    crate: "xid",
+    crate: "xid_nif",
     base_url:
       "https://github.com/phanmn/xid-ex/releases/download/v#{version}",
     force_build: System.get_env("XID_BUILD") in ["1", "true"],
@@ -23,7 +23,8 @@ defmodule Xid do
       "x86_64-unknown-linux-gnu",
       "x86_64-unknown-linux-musl",
     ],
-    version: version
+    version: version,
+    force_build: true
 
   # When your NIF is loaded, it will override this function.
   def generate, do: :erlang.nif_error(:nif_not_loaded)
