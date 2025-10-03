@@ -33,5 +33,3 @@ xid-*.tar
 
 # checksum file should only be included in Hex packages
 checksum-*.exs
-
-/native/xid_nif/target
