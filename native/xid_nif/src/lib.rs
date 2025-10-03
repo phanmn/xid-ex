@@ -8,4 +8,4 @@ fn generate_with_timestamp(timestamp: u64) -> String {
     xd::new_with_timestamp(timestamp).to_string()
 }
 
-rustler::init!("Elixir.Xid", [generate, generate_with_timestamp]);
+rustler::init!("Elixir.Xid");
