@@ -10,7 +10,7 @@ path = "src/lib.rs"
 crate-type = ["cdylib"]
 
 [dependencies]
-rustler = "0.37.0"
+rustler = { version = "0.37", default-features = false, features = ["derive"] }
 xd = { git = "https://github.com/thanhxeon2470/xid-rs", branch = "main", package = "xid"}
 
 # And then, your features.
