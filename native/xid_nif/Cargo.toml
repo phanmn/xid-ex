@@ -12,3 +12,10 @@ crate-type = ["cdylib"]
 [dependencies]
 rustler = "0.37.0"
 xd = { git = "https://github.com/thanhxeon2470/xid-rs", branch = "main", package = "xid"}
+
+# And then, your features.
+[features]
+default = ["nif_version_2_15"]
+nif_version_2_15 = ["rustler/nif_version_2_15"]
+nif_version_2_16 = ["rustler/nif_version_2_16"]
+nif_version_2_17 = ["rustler/nif_version_2_17"]
